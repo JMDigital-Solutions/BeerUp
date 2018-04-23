@@ -6,14 +6,17 @@
   </ion-header>
 
   <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+    <ion-list *ngFor="let section of sideMenu" no-lines>
+      <ion-list-header>
+        {{ section.Name }}
+      </ion-list-header>
+      <button menuClose ion-item *ngFor="let item of section.MenuItems" (click)="openPage(item.Page)">
+        <ion-icon [name]="item.Icon" item-start></ion-icon>
+        {{ item.Title }}
       </button>
     </ion-list>
   </ion-content>
 
 </ion-menu>
 
-<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
