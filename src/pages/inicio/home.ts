@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { MenuItemModel } from '../../../models/MenuItemModel';
-import { EventsPage, FavoritesPage, NotesPage } from '../../pages';
+import { MenuItemModel } from '../../models/MenuItemModel';
+import { EventsPage, FavoritesPage, NotesPage } from '../pages';
 
 @Component({
   selector: 'page-home',
@@ -10,7 +10,7 @@ import { EventsPage, FavoritesPage, NotesPage } from '../../pages';
 export class HomePage {
 
   public tabs: MenuItemModel[];
-  public rootPage = HomePage;
+  public rootPage = EventsPage;
 
   constructor(public navCtrl: NavController) {
     this.tabs = [
