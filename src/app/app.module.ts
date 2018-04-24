@@ -3,7 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage, BeersPage, NotesPage, BreweriesPage, BreweryPage, FavoritesPage, EventsPage } from '../pages/pages';
+import { HomePage, BeersPage, NotesPage, BreweriesPage, BreweryPage, FavoritesPage, EventsPage, BreweryCommentsPage, BreweryHomePage, BreweryMenuPage } from '../pages/pages';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +17,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BreweriesPage,
     BreweryPage,
     FavoritesPage,
-    EventsPage
+	EventsPage,
+	BreweryCommentsPage,
+	BreweryHomePage,
+	BreweryMenuPage,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BreweriesPage,
     BreweryPage,
     FavoritesPage,
-    EventsPage
+	EventsPage,
+	BreweryCommentsPage,
+	BreweryHomePage,
+	BreweryMenuPage,
   ],
   providers: [
     StatusBar,

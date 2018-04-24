@@ -1,4 +1,7 @@
-export { BeersPage } from './cervecerias/beers/beers';
+export { BreweryCommentsPage } from './cervecerias/brewery/brewery-comments/brewery-comments';
+export { BreweryHomePage } from './cervecerias/brewery/brewery-home/brewery-home';
+export { BreweryMenuPage } from './cervecerias/brewery/brewery-menu/brewery-menu';
+export { BeersPage } from './beers/beers';
 export { NotesPage } from './inicio/notes/notes';
 export { BreweriesPage } from './cervecerias/breweries';
 export { BreweryPage } from './cervecerias/brewery/brewery';

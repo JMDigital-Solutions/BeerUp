@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { BreweryPage } from '../pages';
 
 @Component({
 	selector: 'page-breweries',
@@ -12,4 +13,8 @@ export class BreweriesPage {
 
 	ionViewDidLoad() { }
 
+	openBreweryPage(event: Event) {
+		event.stopPropagation();
+		this.navCtrl.push(BreweryPage);
+	}
 }

@@ -1,12 +1,21 @@
 <ion-header>
-
-	<ion-navbar>
-		<ion-title>Breweries</ion-title>
+	<ion-navbar color="primary">
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Cervecer&iacute;as</ion-title>
 	</ion-navbar>
-
 </ion-header>
 
-
 <ion-content>
-
+	<ion-list>
+		<ion-item (click)="openBreweryPage($event)">
+			<ion-thumbnail item-start>
+				<img src="img/thumbnail-totoro.png">
+			</ion-thumbnail>
+			<h2>Beer Up</h2>
+			<p>Puntuacion: <b>4.5</b></p>
+			<button ion-button large clear item-end (click)="openBreweryPage($event)">Ir</button>
+		</ion-item>
+	</ion-list>
 </ion-content>

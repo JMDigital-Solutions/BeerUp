@@ -1,21 +1,21 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+	<ion-header>
+		<ion-toolbar>
+			<ion-title>Menu</ion-title>
+		</ion-toolbar>
+	</ion-header>
 
-  <ion-content>
-    <ion-list *ngFor="let section of sideMenu" no-lines>
-      <ion-list-header>
-        {{ section.Name }}
-      </ion-list-header>
-      <button menuClose ion-item *ngFor="let item of section.MenuItems" (click)="openPage(item.Page)">
-        <ion-icon [name]="item.Icon" item-start></ion-icon>
-        {{ item.Title }}
-      </button>
-    </ion-list>
-  </ion-content>
+	<ion-content>
+		<ion-list *ngFor="let section of sideMenu" no-lines>
+			<ion-list-header>
+				{{ section.Name }}
+			</ion-list-header>
+			<button menuClose ion-item *ngFor="let item of section.MenuItems" (click)="openPage(item.Page)">
+				<ion-icon [name]="item.Icon" item-start></ion-icon>
+				{{ item.Title }}
+			</button>
+		</ion-list>
+	</ion-content>
 
 </ion-menu>
 

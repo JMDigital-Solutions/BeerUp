@@ -1,12 +1,9 @@
 <ion-header>
-
-	<ion-navbar>
-		<ion-title>Brewery</ion-title>
+	<ion-navbar color="primary">
+		<ion-title>Cervecer&iacute;a</ion-title>
 	</ion-navbar>
-
 </ion-header>
 
-
-<ion-content>
-
-</ion-content>
+<ion-tabs>
+	<ion-tab *ngFor="let tab of tabs" [tabIcon]="tab.Icon" [root]="rootPage"></ion-tab>
+</ion-tabs>
