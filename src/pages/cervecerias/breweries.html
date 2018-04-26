@@ -9,13 +9,13 @@
 
 <ion-content>
 	<ion-list>
-		<ion-item (click)="openBreweryPage($event)">
+		<ion-item *ngFor="let brewery of breweries" (click)="openBreweryPage($event, brewery)">
 			<ion-thumbnail item-start>
 				<img src="img/thumbnail-totoro.png">
 			</ion-thumbnail>
-			<h2>Beer Up</h2>
+			<h2>{{ brewery.Name }}</h2>
 			<p>Puntuacion: <b>4.5</b></p>
-			<button ion-button large clear item-end (click)="openBreweryPage($event)">Ir</button>
+			<button ion-button large clear item-end (click)="openBreweryPage($event, brewery)">Ir</button>
 		</ion-item>
 	</ion-list>
 </ion-content>

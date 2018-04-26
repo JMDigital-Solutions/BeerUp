@@ -8,5 +8,5 @@
 </ion-header>
 
 <ion-tabs>
-  <ion-tab *ngFor="let tab of tabs" [tabIcon]="tab.Icon" [root]="rootPage"></ion-tab>
+  <ion-tab *ngFor="let tab of tabs" [tabTitle]="tab.Title" [tabIcon]="tab.Icon" [root]="tab.Page"></ion-tab>
 </ion-tabs>
