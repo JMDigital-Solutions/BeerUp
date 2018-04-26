@@ -3,8 +3,8 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { MenuItemModel } from '../models/MenuItemModel';
-import { MenuSectionModel } from '../models/MenuSectionModel';
+import { MenuItemModel } from '../models/menu-item.model';
+import { MenuSectionModel } from '../models/menu-section.model';
 import { HomePage, EventsPage, FavoritesPage, NotesPage, BreweriesPage, BeersPage } from '../pages/pages';
 
 @Component({

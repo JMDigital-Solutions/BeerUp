@@ -10,6 +10,6 @@ export class EventsPage {
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
 	}
 
-	ionViewDidLoad() { }
+	ionViewDidLoad() {}
 
 }

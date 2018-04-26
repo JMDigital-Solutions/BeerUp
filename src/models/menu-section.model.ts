@@ -1,4 +1,4 @@
-import { MenuItemModel } from "./MenuItemModel";
+import { MenuItemModel } from "./menu-item.model";
 
 export interface MenuSectionModel {
     Name: string;

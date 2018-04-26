@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { MenuItemModel } from '../../models/MenuItemModel';
+import { MenuItemModel } from '../../models/menu-item.model';
 import { EventsPage, FavoritesPage, NotesPage } from '../pages';
 
 @Component({
